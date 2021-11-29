@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 3fr 2fr 4fr;
+    grid-template-rows: 600px 600px 600px;
+    grid-template-areas: 
+       "header header headerRight"
+       "nav article article"
+       "footer footer rightFooter"
+    ;
+    gap: 10px;
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+.header{
+    margin-left: -80px;
+    background:url(https://ru-wotp.wgcdn.co/dcont/fb/image/enemy_5_ru_new.png);
+    grid-area: header;
+}
+.headerRight{
+    display: flex;
+    align-items: center;
+   
+}
+.nav{
+    background:url(https://wotpack.ru/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2020/10/%D0%9C%D0%B8%D1%80%D0%BD%D1%8B%D0%B9-13-800x555.jpg.webp);
+    grid-area: nav;
+}
+.article{
+    background:url(https://naked-science.ru/wp-content/uploads/2016/04/article_grand_universe_by_antifan_real.jpg);
+    grid-area: article;
+}
+.footer{
+    
+    background:url(http://www.nim.ru/userfiles/images/enemy_1_ru.jpg);
+    opacity: 0.5;
+    grid-area: footer;
+}
+.rightFooter{
+    display: flex;
+    align-items: center;
+    grid-area: rightFooter;
+}
